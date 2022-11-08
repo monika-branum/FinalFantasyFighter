@@ -29,3 +29,10 @@
 ###create soldier element for a specific soldier object
 ###soldierClickHandler
 ###take care of game logic in which soldiers are clicked
+
+Stretch Goals:
+add one piece theme song
+chance of finding sanji and luffy in the kitchen, and adds them to the fight (img)
+chance of boss being created (navy admiral)
+add one piece logo for header
+chance of finding Shushui sword (+1 attack)
