@@ -34,3 +34,23 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.soldier {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+}
+.soldier-gif {
+    height: 50px;
+    width: 50px;
+}
+
+.container-left {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.game-screen {
+    display: flex;
+    flex-flow: row nowrap;
+}
