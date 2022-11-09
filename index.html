@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
-
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
+    <body>
+        <header>
+            <h1><img class="logo" src="./assets/one-piece-logo.png" alt="one piece logo" /></h1>
+        </header>
+        <main>
+            <div class="zoro-stats">
+                <div class="defeated-soldiers">
+                    <p>"You have defeated "<span id="defeated-number">0</span>" naval officers"</p>
+                    <div class="defeated-list"></div>
+                </div>
+                <div class="adventurer">
+                    <p>"Zoro's HP "<span id="zoro-hp">10</span></p>
+                    <img
+                        id="zoro-img"
+                        src="./assets/Zoro__s_Swords_by_Michalv.gif"
+                        alt="zoro
+                    spinning swords in front of him attack"
+                    />
+                </div>
+            </div>
+            <div class="soldier=-stats">
+            <div><form><label for="soldier-name-input">More officers incoming!</label>
+            <br>  <label for="soldier-name-input">Here comes Officer...</label>
+            <div id="div-form"><input name="soldier-name" id="soldier-name-input" placeholder="Insert Officer Name Here" type="text">
+                <button type="submit">Fight!</button>
+            </form>
+            </div>
+            <div class="soldier">
+                <div class="soldier"><p>Ninjin</p>
+                <p id="soldier-gif"><img src="./assets/soldier-run-sprite.gif"></p>
+            </div>
+                <p id="soldier-hp-1">1</p>
+            </div>
+            <div class="soldier"><p>Tamanengi</p>
+            <p id="soldier-gif2"><img src="./assets/soldier-run-sprite.gif"></p>
+        </div>
+        <p id="soldier-hp-2">2</p>
+        </div>
+        <div class="soldier"><p>Piiman</p>
+        <p id="soldier-gif3"><img src="./assets/soldier-run-sprite.gif"></p>
+    </div>
     </main>
-
-</body>
-
+    </body>
 </html>
