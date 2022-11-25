@@ -1,4 +1,4 @@
-function renderSoldier() {
+export function renderSoldier(item) {
     const soldierEl = document.createElement('div');
     const soldierName = document.createElement('p');
     const soldierImg = document.createElement('img');
