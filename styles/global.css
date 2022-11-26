@@ -55,3 +55,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
 }
+
+.class-defeated {
+    opacity: 30%;
+}

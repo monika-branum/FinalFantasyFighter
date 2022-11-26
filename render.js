@@ -10,6 +10,10 @@ export function renderSoldier(item) {
     soldierEl.classList.add('soldier');
     soldierImg.classList.add('soldier-gif');
 
+    if (soldierHP === 0) {
+        soldierHP.classList.add('classDefeated');
+    }
+
     soldierEl.append(soldierName, soldierImg, soldierHP);
     return soldierEl;
 }
