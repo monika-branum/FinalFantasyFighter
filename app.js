@@ -5,9 +5,15 @@ import { renderSoldier } from './render.js';
 const defeatedSoldiers = document.getElementById('defeated-soldiers');
 const soldierArray = [];
 const soldierDiv = document.getElementById('soldiers');
+const submitBtn = document.getElementById('submit-button');
+const nameInput = document.getElementById('soldier-name-input');
 /* State */
 
 /* Events */
+submitBtn.addEventListener('click', () => {
+    createSoldier(nameInput.value, 3);
+    display();
+});
 
 /* Display Functions */
 function display() {
@@ -25,6 +31,7 @@ function createSoldier(name, health) {
     };
     soldierArray.push(newSoldier);
 }
+
 // (don't forget to call any display functions you want to run on page load!)
 createSoldier('Ninjin', 3);
 createSoldier('Tamanengi', 3);

@@ -5,7 +5,7 @@ export function renderSoldier(item) {
     const soldierHP = document.createElement('p');
 
     soldierName.textContent = item.name;
-    soldierHP.textContent = `HP:${item.soldierHealth}`;
+    soldierHP.textContent = `HP:${item.health}`;
 
     soldierEl.classList.add('soldier');
     soldierImg.classList.add('soldier-gif');
