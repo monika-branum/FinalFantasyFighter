@@ -41,6 +41,7 @@ main {
     justify-content: right;
 }
 .soldier-gif {
+    background-image: url(../assets/soldier-run-sprite.gif);
     height: 50px;
     width: 50px;
 }
