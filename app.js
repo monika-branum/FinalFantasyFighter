@@ -16,7 +16,8 @@ let enemiesDefeated = 0;
 let zoroHealth = 20;
 /* Events */
 submitBtn.addEventListener('click', () => {
-    createSoldier(nameInput.value, 3);
+    if (zoroHealth <= 0) return;
+    createSoldier(nameInput.value, Math.floor(Math.random() * 5));
     display();
 });
 
